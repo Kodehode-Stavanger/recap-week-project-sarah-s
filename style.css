@@ -1,0 +1,76 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: E1DDDD;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-family: "Sixtyfour", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "BLED" 0, "SCAN" 0;
+  color: azure;
+}
+#header {
+  width: 100%;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+#games-posters-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(3, 30%);
+  gap: 1%;
+}
+
+ol {
+  display: contents;
+  list-style: none;
+
+  justify-content: center;
+}
+li {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+  text-align: center;
+}
+h3 {
+  text-align: center;
+}
+
+.icons-class {
+  width: 100px;
+  height: 100px;
+}
+
+p {
+  width: 80%;
+  height: 60%;
+  overflow: hidden;
+}
+img {
+  margin-bottom: 50px;
+}

@@ -109,3 +109,40 @@ const topSellers = [
     logo: "mario-kart-logo.jpg",
   },
 ];
+const gamesPostersContainer = document.getElementById(
+  "games-posters-container"
+);
+document.body.append(gamesPostersContainer);
+const gamesList = document.createElement("ol");
+gamesPostersContainer.append(gamesList);
+for (let i = 0; i < topSellers.length; i++) {
+  const gameElem = document.createElement("li");
+
+  const gameTitle = document.createElement("h2");
+  const gameDeveloper = document.createElement("h3");
+  const gameReleaseYear = document.createElement("p");
+  const gameCategories = document.createElement("p");
+  const gameDescription = document.createElement("p");
+  const gameplatforms = document.createElement("p");
+  const gameLogo = document.createElement("img");
+  gameLogo.classList.add("icons-class");
+
+  gameTitle.textContent = topSellers[i].title;
+  gameDeveloper.textContent = topSellers[i].developer;
+  gameReleaseYear.textContent = topSellers[i].releaseYear;
+  gameCategories.textContent = topSellers[i].categories.join(" , ");
+  gameDescription.textContent = topSellers[i].description;
+  gameplatforms.textContent = topSellers[i].platforms.join(" , ");
+  gameLogo.src = `logos/${topSellers[i].logo}`;
+
+  gameElem.append(
+    gameTitle,
+    gameDeveloper,
+    gameReleaseYear,
+    gameCategories,
+    gameDescription,
+    gameplatforms,
+    gameLogo
+  );
+  gamesList.append(gameElem);
+}
