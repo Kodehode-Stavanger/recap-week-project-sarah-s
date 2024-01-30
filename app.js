@@ -1,10 +1,8 @@
-import { topSellers } from './resorces/topSellers.js'
+import { topSellers } from './assets/resorces/topSellers.js'
 
-const gamesPostersContainer = document.getElementById('games-posters-container')
 const gamesList = document.createElement('ol')
-
-gamesPostersContainer.append(gamesList)
-document.body.append(gamesPostersContainer)
+gamesList.className = 'list-Container'
+document.body.append(gamesList)
 
 topSellers.forEach((item) => {
 	const gameElem = document.createElement('li')
@@ -16,17 +14,17 @@ topSellers.forEach((item) => {
 	const gameReleaseYear = document.createElement('p')
 	const gameDescription = document.createElement('p')
 
-	gameLogo.className = 'icons-class'
+	gameLogo.className = 'game-logo'
 	gameTitle.className = 'game-title'
 	gameElem.className = 'game-container'
-	gameDeveloper.className = 'game-Developer'
-	gamePlatforms.className = 'game-Platforms'
-	gameCategories.className = 'game-Categories'
-	gameReleaseYear.className = 'game-ReleaseYear'
-	gameDescription.className = 'game-Description'
+	gameDeveloper.className = 'game-developer'
+	gamePlatforms.className = 'game-platforms'
+	gameCategories.className = 'game-categories'
+	gameReleaseYear.className = 'game-releaseYear'
+	gameDescription.className = 'game-description'
 
 	gameTitle.textContent = item.title
-	gameLogo.src = `logos/${item.logo}`
+	gameLogo.src = `assets/images/logos/${item.logo}`
 	gameDeveloper.textContent = item.developer
 	gameReleaseYear.textContent = item.releaseYear
 	gameDescription.textContent = item.description
