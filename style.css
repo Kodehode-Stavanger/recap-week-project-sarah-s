@@ -3,15 +3,20 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+
 body {
-  background-color: E1DDDD;
+  background-color: #E1DDDD;
 }
+
+
 main {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+
 
 h1 {
   font-family: "Sixtyfour", sans-serif;
@@ -21,6 +26,8 @@ h1 {
   font-variation-settings: "BLED" 0, "SCAN" 0;
   color: azure;
 }
+
+
 #header {
   width: 100%;
   padding: 50px;
@@ -32,8 +39,8 @@ h1 {
   margin-bottom: 50px;
 }
 
+
 #games-posters-container {
-  display: flex;
   justify-content: center;
   align-items: center;
   display: grid;
@@ -41,36 +48,53 @@ h1 {
   gap: 1%;
 }
 
+
 ol {
   display: contents;
   list-style: none;
-
   justify-content: center;
 }
+
+
 li {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
 }
+
 
 h2 {
   text-align: center;
 }
+
+
 h3 {
   text-align: center;
 }
 
+
 .icons-class {
   width: 100px;
-  height: 100px;
+  height: 100px
+
 }
+
 
 p {
   width: 80%;
   height: 60%;
   overflow: hidden;
 }
+
+
 img {
   margin-bottom: 50px;
 }
+
+.game-container {
+  height: 500px;
+  align-items: center;
+}
+
+.game-
