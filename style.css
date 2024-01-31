@@ -4,6 +4,21 @@
 	box-sizing: border-box;
 }
 
+:root {
+  --main-color: red;
+  --mainLight-color: red;
+  --mainDark-color: red;
+
+  --secondary-color: red;
+  --secondaryLight-color: red;
+  --secondaryDark-color: red;
+
+  --textLight-color: red;
+  --textDark-color: red;
+}
+
+/*to use color var write feks: color: var(--main-color)*/
+
 ::-webkit-scrollbar {
 	display: none;
 }
@@ -58,7 +73,7 @@ img {
 
 /*put as much info from the generic tags into class tags*/
 
-.list-Container {
+.list-container {
 	justify-content: center;
 	align-items: center;
 	display: grid;
