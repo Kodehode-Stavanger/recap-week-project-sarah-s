@@ -1,90 +1,87 @@
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
 }
 
 ::-webkit-scrollbar {
-  display: none;
+	display: none;
 }
 
 body {
-  background-color: #E1DDDD;
+	background-color: #e1dddd;
 }
 
 main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 h1 {
-  font-family: "Sixtyfour", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  font-variation-settings: "BLED" 0, "SCAN" 0;
-  color: azure;
+	font-family: 'Sixtyfour', sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+	font-variation-settings: 'BLED' 0, 'SCAN' 0;
+	color: azure;
 }
-
 
 #header {
-  width: 100%;
-  padding: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: black;
-  margin-top: 50px;
-  margin-bottom: 50px;
+	width: 100%;
+	padding: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: black;
+	margin-top: 50px;
+	margin-bottom: 50px;
 }
-
 
 ol {
-  display: contents;
-  list-style: none;
-  justify-content: center;
+	display: contents;
+	list-style: none;
+	justify-content: center;
 }
-
 
 li {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
 }
 
-
 img {
-  margin-bottom: 50px;
+	margin-bottom: 50px;
 }
 
 /*put as much info from the generic tags into class tags*/
 
 .list-Container {
-  justify-content: center;
-  align-items: center;
-  display: grid;
-  grid-template-columns: repeat(3, 30%);
-  gap: 1%;
+	justify-content: center;
+	align-items: center;
+	display: grid;
+	grid-template-columns: repeat(3, 30%);
+	gap: 1%;
 }
 
 .game-container {
-  height: 600px;
-  align-items: center;
-  padding: 10%;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+	height: 600px;
+	align-items: center;
+	padding: 10%;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	background-color: white;
 }
 
 .game-title {
-  text-align: center;
+	text-align: center;
 }
 
 .game-developer {
-  text-align: center;
+	text-align: center;
 }
 
 .game-releaseYear {
@@ -100,8 +97,7 @@ img {
 }
 
 .game-logo {
-  width: 100px;
-  height: 100px;
-  border-radius: 4px;
+	width: 100px;
+	height: 100px;
+	border-radius: 4px;
 }
-
