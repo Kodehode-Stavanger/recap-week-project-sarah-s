@@ -24,10 +24,10 @@ topSellers.forEach((item) => {
 	gameDescription.className = 'game-description'
 
 	gameTitle.textContent = item.title
-	gameLogo.src = `assets/images/logos/${item.logo}`
 	gameDeveloper.textContent = item.developer
 	gameReleaseYear.textContent = item.releaseYear
 	gameDescription.textContent = item.description
+	gameLogo.src = `assets/images/logos/${item.logo}`
 	gamePlatforms.textContent = item.platforms.join(' , ')
 	gameCategories.textContent = `#${item.categories.join(' #')}`
 
